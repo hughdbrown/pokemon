@@ -2,12 +2,21 @@
 Python scripts to scale graphics and pave them within a grid. Useful for making Pokemon-like cards with 5:7 aspect ratio.
 
 # Programs
+Each of these programs puts JPEG into a 3x3 grid and produces a PNG file. The resulting file, when printed, can be easily cut into 9 cards.
+
 1. pokemon-grid.py  
-The original. Puts JPEG into a 3x3 grid and produces a PNG file. The resulting file, when printed, can be easily cut into 9 cards.
+The original.
 2. pokemon-grid-horizontal.py  
 A quick modification to deal with images that have an aspect ratio that is too wide.
 3. openai-pokemon-grid.py  
 An interactive program created by OpenAI from a prompt. In theory, this makes it easier to iterate on code changes.
+The typical usage is:
+- run the program
+- load a JPEG file
+- create a 3x3 grid which is 373px by 521px
+- rotate 90 degrees
+- save the new PNG file (give a name for the file when prompted)
+- quit
 
 
 # OpenAI prompt to create program
